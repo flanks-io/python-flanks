@@ -14,5 +14,33 @@ Soon
 
 ## Usage
 
-Soon
+### Initialize Client
+Basic usage for initialize the client.
 
+```
+import flanks
+API_TOKEN = 'TOKEN_API'
+flank = Flanks(API_TOKEN)
+```
+
+### Create User
+Creating users. Fill BANK_USERNAME, BANK_PASSWORD, BANK, BANK_PASSWORD2 with real data.
+
+```
+import flanks
+API_TOKEN = 'TOKEN_API'
+flank = Flanks(API_TOKEN)
+username='BANK_USERNAME'
+password='BANK_PASSWORD'
+bank='BANK'
+password2='BANK_PASSWORD2' #If it is necessary
+user_token = flank.create_user(username, password, bank, password2)
+```
+
+
+### GET DATA OF USER
+You only need one line:
+
+```
+    user = flank.get_data(user_token)
+```
