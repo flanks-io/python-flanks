@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="flanks",
-    version="0.0.1",
+    version="0.0.2",
     author="Flanks Team",
     author_email="hello@flanks.io",
     description="Small client for FlanksAPI",
