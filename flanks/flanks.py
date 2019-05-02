@@ -1,7 +1,7 @@
 import requests
 
 
-class Clustr():
+class Flanks():
     access_key = ''
     dns = ''
     session = ''
